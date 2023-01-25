@@ -2,6 +2,8 @@
 
 const price_km = 0.21;
 
+const user_name = (document.getElementById("user-name"));
+
 const user_age = (document.getElementById("user-age"));
 // console.log(typeof user_age);
 
@@ -45,7 +47,7 @@ submit_button.addEventListener(
             document.getElementById("price-bill").innerHTML = ("€ " + outpout_msg.toFixed(2));
         }
 
-
+        document.getElementById("bill-name").innerHTML = (user_name.value);
     }
 
 
